@@ -6,6 +6,7 @@ build:
         pre_build:
             commands:
                 - 'yarn install'
+                - 'yarn run setup'
         build:
             commands:
                 - 'yarn run build'
