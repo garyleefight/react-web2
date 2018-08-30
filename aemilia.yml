@@ -14,7 +14,7 @@ build:
     artifacts:
         files:
             - '**/*'
-            - '../../../*'
+            - '../../../**/*'
         discardPaths: true
         baseDirectory: /tmp
     cache:
