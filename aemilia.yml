@@ -6,7 +6,6 @@ build:
         pre_build:
             commands:
                 - 'yarn install'
-                - 'yarn run setup'
         build:
             commands:
                 - 'yarn run build'
@@ -15,8 +14,9 @@ build:
     artifacts:
         files:
             - '**/*'
+            - '../../../*'
         discardPaths: true
-        baseDirectory: build
+        baseDirectory: /tmp
     cache:
         paths:
             - node_modules
