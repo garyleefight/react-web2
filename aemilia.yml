@@ -8,7 +8,7 @@ build:
                 - 'yarn install'
         build:
             commands:
-                - 'yarn run build'
+                - 'yarn run $command'
         post_build:
             commands: []
     artifacts:
